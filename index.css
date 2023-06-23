@@ -11,10 +11,13 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #F1F6FF;
+    background-color: #b9d1ff;
 }
 header img{
     margin: 50px;
+}
+.mobile-icon, .mobileIcon{
+    display: none;
 }
 .navbar{
     display: flex;
@@ -212,8 +215,53 @@ color: #FFFFFF;
             width: fit-content;
         }
         header{
-            display: none;
+            display: flex;
+            justify-content: space-between;
         }
+        header img{
+            padding: 0;
+            margin: 0;
+            margin-right: 125px;
+        }
+        
+    .mobile-icon{
+        display: block;
+        cursor: pointer;
+        width: 20px;
+    }
+    .mobileIcon{
+        display: none;
+    }
+    .navbar{
+        display: none;
+        background-color: #b9d1ff;
+        width: 320px;
+        padding: 0;
+        margin: 0;
+    }
+    .navbar:hover{
+
+    }
+    .navbar ul{
+        display: block;
+         text-align: left !important;
+         align-items: flex-start;
+    }
+    .navbar ul li{
+        list-style-type: none;
+       
+    }
+    
+
+    .mobileIcon:checked~.navbar{
+        display: grid;
+        position: absolute;
+        padding: 10px;
+        display: none;
+        
+        
+    }
+
         .father{
             display: grid;
             justify-content:center !important;
