@@ -39,10 +39,12 @@ header img{
 .gucci{
     width: 1347px;
     height: 730.47px;
+    margin-bottom: 90px;
 }
 .father h3{
+    margin-right: 109px;
 
-margin-left: 09px;
+margin-left: 109px;
 margin-top: 28px;
 font-family: 'Roboto';
 font-weight: 400;
@@ -56,7 +58,13 @@ color: #000000;
     width: 1340px;
     height: 730.47px;
     }
-  
+   .rectangle h3{
+        margin-top: 60px;
+        text-align: center;
+    }
+   .rectangle h3 span{
+        color: #F20A0A;
+    }
     footer{
         background-color: #0D0D0D;
         color: #fff;
@@ -83,4 +91,74 @@ color: #FFFFFF;
         margin-right:120px;
         font-family: 'Roboto';
         font-size: 16px;
+    }
+
+
+
+    @media(max-width:990px){
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: grid;
+            width: fit-content;
+        }
+        header{
+            display: none;
+        }
+        .father img{
+            width: 300px;
+            height: 300px;
+            margin-left: 10px;
+        }
+        .father h3{
+            margin: 0;
+            padding: 0;
+            font-size: 10px;
+            text-align: left;
+            width: 300px;
+            margin-left: 10px;
+        }
+        .rectangle img{
+            display: none;
+        }
+       .rectangle    h3{
+            text-align: center !important;
+            padding: 0;
+            margin: 0;
+            font-size: 11px;
+        }
+        footer{
+            display: grid;
+            justify-content:center !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            align-items: center !important;
+            
+           
+        }
+        .footer-1{
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+             font-size: 15px;
+             width: 320px;
+        }
+        .footer-2{
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+             font-size: 15px;
+             width: 320px;
+        }
+        .footer-3{
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+             font-size: 15px;
+             width: 320px;
+        }
     }

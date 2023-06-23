@@ -62,6 +62,7 @@ header img{
     justify-content: space-between;
     padding-left: 100px;
     padding-right: 100px; 
+    
 }
 .body-1 span h3{
 color:#000000;
@@ -131,4 +132,97 @@ font-size: 20px;
             margin-right:120px;
             font-family: 'Roboto';
             font-size: 16px;
+        }
+        @media(max-width:990px){
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                display: grid;
+                width: fit-content;
+            }
+            header{
+                display: none;
+            }
+            .head{
+                display: none;
+            }
+            .body{
+                align-items: center !important;
+                justify-content: center !important;
+                display: grid;
+            }
+            .body-1{
+                display: grid;
+                margin: 0;
+                padding: 0;
+                align-items: center;
+            }
+            .body-1 span{
+                display: grid;
+                align-items: center;
+                margin-left: 10px;
+            }
+            .body-2{
+                display: grid;
+                margin: 0;
+                padding: 0;
+            }
+            .body-2 span{
+                display: grid;
+                align-items: center;
+                margin-left: 10px;
+            }
+            .body-3{
+                display: grid;
+                margin: 0;
+                padding: 0;
+            }
+            .body-3 span{
+                display: grid;
+                align-items: center;
+                margin-left: 10px;
+            }
+            .rectangle img{
+            display: none;
+            }
+            h3{
+                text-align: center !important;
+                padding: 0;
+                margin: 0;
+                font-size: 11px;
+            }
+            footer{
+                display: grid;
+                justify-content:center !important;
+                margin: 0 !important;
+                padding: 0 !important;
+                align-items: center !important;
+                
+               
+            }
+            .footer-1{
+                align-items: center;
+                justify-content: center;
+                margin: 0;
+                padding: 0;
+                 font-size: 15px;
+                 width: 320px;
+            }
+            .footer-2{
+                align-items: center;
+                justify-content: center;
+                margin: 0;
+                padding: 0;
+                 font-size: 15px;
+                 width: 320px;
+            }
+            .footer-3{
+                align-items: center;
+                justify-content: center;
+                margin: 0;
+                padding: 0;
+                 font-size: 15px;
+                 width: 320px;
+            }
         }
