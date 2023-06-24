@@ -11,25 +11,38 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-   
-    background-color: #F1F6FF;
+    background-color: #b9d1ff;
 }
 header img{
-    margin: 50px;
+    margin: 10px;
+}
+.mobile-icon, .mobileIcon{
+    display: none;
 }
 .navbar{
     display: flex;
     text-transform: uppercase;
-    margin: 50px;
+    margin: 10px;
 }
 .navbar ul{
     display: flex;
 }
 .navbar ul li{
-    display: flex;
-     text-decoration: none;
+    display: grid;
      margin-right: 40px;
+     color: black;
+
 }
+.navbar ul a{
+    text-decoration: none;
+}
+.navbar ul li span{
+    color: #F20A0A;
+}
+.bor{
+    border-bottom: 2px solid #F20A0A;
+} 
+
 .navbar ul li span{
     color:  #0E8104;
     
@@ -300,9 +313,67 @@ color: #FFFFFF;
         display: grid;
         width: fit-content;
     }
-    header{
-        display: none;
+    body{
+        width: 320px !important;
     }
+    header{
+        display: grid;
+        width: 320px;
+        justify-content: space-between !important;
+    }
+    header img{
+        padding: 0;
+        margin: 0;
+        margin-right: 125px;
+        position: sticky;
+    }
+    .mo{
+        display: flex;
+    }
+    
+.mobile-icon{
+    display: block;
+    cursor: pointer;
+    width: 20px;
+}
+.mobileIcon{
+    display: none;
+}
+.navbar{
+    display: none;
+    background-color: black;
+    width: 320px;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    text-align: left;
+}
+
+.navbar ul{
+    display: block;
+     text-align: left !important;
+     display: grid !important;
+}
+.navbar ul li{
+    list-style-type: none;
+    display: grid;
+    color: white;
+}
+.navbar ul a{
+    display: grid;
+    text-align: left;
+}
+
+.mobileIcon:checked~.navbar{
+    display: grid;
+    position: absolute;
+    padding: 10px;
+    display: none;
+}
+.mob{
+    display: grid !important;
+    text-align: start !important;
+}
     .father{
         width: 300px;
         margin-left: 10px;

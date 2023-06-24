@@ -11,29 +11,35 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-   
-    background-color: #F1F6FF;
+    background-color: #b9d1ff;
 }
 header img{
-    margin: 50px;
+    margin: 10px;
+}
+.mobile-icon, .mobileIcon{
+    display: none;
 }
 .navbar{
     display: flex;
     text-transform: uppercase;
-    margin: 50px;
+    margin: 10px;
 }
 .navbar ul{
     display: flex;
 }
 .navbar ul li{
     display: flex;
-     text-decoration: none;
      margin-right: 40px;
+     color: black;
+
+}
+.navbar ul a{
+    text-decoration: none;
 }
 .navbar ul li span{
     color: #F20A0A;
 }
-.border{
+.bor{
     border-bottom: 2px solid #F20A0A;
 }
 .father{
@@ -101,17 +107,75 @@ color: #FFFFFF;
 
 @media(max-width:990px){
     *{
-        margin: 0 !important;
-        padding: 0 !important;
+        margin: 0;
+        padding: 0;
         box-sizing: border-box;
         display: grid;
         width: fit-content;
-        align-items: center !important;
-        justify-content: center !important;
+    }
+    body{
+        width: 320px !important;
     }
     header{
-        display: none;
+        display: grid;
+        width: 100%;
+        justify-content: space-between !important;
+        align-items: center;
     }
+    header img{
+        padding: 0;
+        margin: 0;
+        margin-right: 100px;
+        position: sticky;
+    }
+    .mo{
+        display: flex;
+    }
+    
+.mobile-icon{
+    display: block;
+    cursor: pointer;
+    width: 20px;
+}
+.mobileIcon{
+    display: none;
+}
+.navbar{
+    display: none;
+    background-color: #b9d1ff;
+    width: 320px;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    text-align: left;
+}
+
+.navbar ul{
+    display: block;
+     text-align: left !important;
+     display: grid !important;
+}
+.navbar ul li{
+    list-style-type: none;
+}
+.navbar ul a{
+    display: grid;
+    text-align: left;
+}
+
+.mobileIcon:checked~.navbar{
+    display: grid;
+    position: absolute;
+    padding: 10px;
+    display: none;
+}
+.mob{
+    display: grid !important;
+    text-align: start !important;
+}
+.father{
+    margin: 0 !important;
+}
     .father-1{
         margin: 0 !important;
         padding: 0 !important;
@@ -128,8 +192,8 @@ color: #FFFFFF;
         display: grid;
     }
     .father-2 img{
-        width: 300px;
-        height: 300px;
+        width: 280px;
+        height: 280px;
         margin-left: 10px !important;
         margin-bottom: 20px !important;
     }

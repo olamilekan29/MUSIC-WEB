@@ -14,7 +14,7 @@ header{
     background-color: #b9d1ff;
 }
 header img{
-    margin: 50px;
+    margin: 10px;
 }
 .mobile-icon, .mobileIcon{
     display: none;
@@ -22,7 +22,7 @@ header img{
 .navbar{
     display: flex;
     text-transform: uppercase;
-    margin: 50px;
+    margin: 10px;
 }
 .navbar ul{
     display: flex;
@@ -39,7 +39,7 @@ header img{
 .navbar ul li span{
     color: #F20A0A;
 }
-.border{
+.bor{
     border-bottom: 2px solid #F20A0A;
 }
 .father{
@@ -214,14 +214,22 @@ color: #FFFFFF;
             display: grid;
             width: fit-content;
         }
+        body{
+            width: 320px !important;
+        }
         header{
-            display: flex;
-            justify-content: space-between;
+            display: grid;
+            width: 320px;
+            justify-content: space-between !important;
         }
         header img{
             padding: 0;
             margin: 0;
             margin-right: 125px;
+            position: sticky;
+        }
+        .mo{
+            display: flex;
         }
         
     .mobile-icon{
@@ -238,36 +246,40 @@ color: #FFFFFF;
         width: 320px;
         padding: 0;
         margin: 0;
+        display: grid;
+        text-align: left;
     }
-    .navbar:hover{
-
-    }
+    
     .navbar ul{
         display: block;
          text-align: left !important;
-         align-items: flex-start;
+         display: grid !important;
     }
     .navbar ul li{
         list-style-type: none;
-       
     }
-    
+    .navbar ul a{
+        display: grid;
+        text-align: left;
+    }
 
     .mobileIcon:checked~.navbar{
         display: grid;
         position: absolute;
         padding: 10px;
         display: none;
-        
-        
     }
-
+    .mob{
+        display: grid !important;
+        text-align: start !important;
+    }
         .father{
             display: grid;
             justify-content:center !important;
             margin: 0 !important;
             padding: 0 !important;
             align-items: center !important;
+            width: 320px;
         }
         .father h2{
             margin-left: 30px;
@@ -337,9 +349,11 @@ color: #FFFFFF;
             font-size: 13px;
         }
         .black{
-            font-size: 10px;
+            font-size: 8px;
             margin-left: 5px;
+            width: 300px;
         }
+       
         .uncle{
             align-items: center !important;
             justify-content: center !important;
