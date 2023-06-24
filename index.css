@@ -7,11 +7,15 @@ body{
     align-items: center;
 }
 
+
 header{
-    display: flex;
+        display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: #b9d1ff;
+}
+.mo{
+    display: grid;
 }
 header img{
     margin: 10px;
@@ -107,7 +111,7 @@ margin-bottom: 20px;
 .mother-3 img{
     margin-right: 20px;
 }
-.mother-4{
+/* .mother-4{
     display: flex;
     padding: 50px;
     align-items: center;
@@ -137,7 +141,37 @@ margin-bottom: 20px;
         width: 120px;
         color: white;
         border: none;
+    } */
+    .mother-4{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 50px;
+        margin-right: 50px;
     }
+    .mother-6 h2{
+        font-family: Roboto;
+        font-size: 30px;
+        font-weight: 400;
+        text-align: left;
+        margin-bottom: 20px;
+        }
+        .mother-6 h3{
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 26px;
+        letter-spacing: 0em;
+        text-align: left;
+        margin-bottom: 20px;
+        }
+        .mother-6 button{
+            background: #222222;
+            height: 40px;
+            width: 120px;
+            color: white;
+            border: none;
+        }
     .black{
         background-color: #0D0D0D;
         color: white;
@@ -210,19 +244,12 @@ color: #FFFFFF;
         *{
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
             
-            width: fit-content;
         }
-        body{
-            width: 320px !important;
-        }
-        header{
-            display: grid;
-            width: 320px;
-            justify-content: space-between !important;
-        }
-        header img{
+       head{
+        background: #b9d1ff;
+       }
+        head img{
             padding: 0;
             margin: 0;
             margin-right: 125px;
@@ -243,7 +270,7 @@ color: #FFFFFF;
     .navbar{
         display: none;
         background-color: #b9d1ff;
-        width: 320px;
+        
         padding: 0;
         margin: 0;
         display: grid;
@@ -266,7 +293,7 @@ color: #FFFFFF;
     .mobileIcon:checked~.navbar{
         display: grid;
         position: absolute;
-        padding: 10px;
+       
         display: none;
     }
     .mob{
@@ -279,7 +306,6 @@ color: #FFFFFF;
             margin: 0 !important;
             padding: 0 !important;
             align-items: center !important;
-            width: 320px;
         }
         .father h2{
             margin-left: 30px;
@@ -324,8 +350,10 @@ color: #FFFFFF;
         }
         .mother-3 img{
             width: 280px !important;
+            margin: 0;
+            padding: 0;
         }
-        .mother-4{
+        /* .mother-4{
             display: grid;
             padding: 0;
             align-items: center;
@@ -338,8 +366,9 @@ color: #FFFFFF;
         }
         .mother-5 img{
             width: 280px !important;
-            margin-top: 20px;
-
+            margin-top: 20px !important;
+            margin: 0;
+            padding: 0;
         }
         .mother-6 h2{
             font-size: 15px;
@@ -347,6 +376,30 @@ color: #FFFFFF;
         }
         .mother-6 h3{
             font-size: 13px;
+        } */
+        .mother-4{
+            display: grid;
+            margin: 0;
+            padding: 0;
+        }
+        .mother-5 img{
+            width: 300px;
+            height: 300px;
+            margin-left: 10px !important;
+        }
+        .mother-6 h2{
+            font-size: 15px;
+            margin-left: 10px;
+        }
+        .mother-6 h3{
+            font-size: 10px;
+            margin-left: 10px;
+        }
+        .mother-6 button{
+            width: 280px;
+            margin-bottom: 30px;
+            background-color: #0D0D0D;
+            margin-left: 20px;
         }
         .black{
             font-size: 8px;
@@ -357,15 +410,25 @@ color: #FFFFFF;
         .uncle{
             align-items: center !important;
             justify-content: center !important;
+            padding: 0 !important;
         }
         .uncle-1{
             display: grid;
+            justify-content: center;
+            align-items: center;
+        }
+        .uncle-1 img{
+            padding-right: 0 !important;
             
         }
-        
+        .uncle-2 img{
+            padding-right: 0 !important;
+            
+        }
         .uncle-2{
             display: grid;
-            
+            justify-content: center;
+            align-items: center;
         }
         .uncle h3{
             text-align: center !important;
