@@ -13,6 +13,12 @@ header{
     justify-content: space-between;
     background-color: #b9d1ff;
 }
+.moo{
+    display: flex;
+}
+.mo{
+    display: grid;
+}
 header img{
     margin: 10px;
 }
@@ -42,6 +48,7 @@ header img{
 .bor{
     border-bottom: 2px solid #F20A0A;
 }
+
 .father{
     display: grid;
     margin-left: 200px;
@@ -117,62 +124,67 @@ color: #FFFFFF;
         width: 320px !important;
     }
     header{
+        background: #b9d1ff;
         display: grid;
-        width: 100%;
         justify-content: space-between !important;
         align-items: center;
+       }
+        header img{
+            padding: 0;
+            margin: 0;
+            position: sticky;
+        }
+        .mock{
+            margin-right: 125px;
+        }
+        .mo{
+            display: flex;
+
+        }
+        
+    .mobile-icon{
+        display: block;
+        cursor: pointer;
+        width: 20px;
     }
-    header img{
+    .mobileIcon{
+        display: none;
+    }
+    .navbar{
+        display: none;
+        background-color: #b9d1ff;
+        
         padding: 0;
         margin: 0;
-        margin-right: 100px;
-        position: sticky;
-    }
-    .mo{
-        display: flex;
+        display: grid;
+        text-align: left;
     }
     
-.mobile-icon{
-    display: block;
-    cursor: pointer;
-    width: 20px;
-}
-.mobileIcon{
-    display: none;
-}
-.navbar{
-    display: none;
-    background-color: #b9d1ff;
-    width: 320px;
-    padding: 0;
-    margin: 0;
-    display: grid;
-    text-align: left;
-}
+    .navbar ul{
+        display: block;
+         text-align: left !important;
+         display: grid !important;
+    }
+    .navbar ul li{
+        list-style-type: none;
+        margin-left: 30px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .navbar ul a{
+        display: grid;
+        text-align: left;
+    }
 
-.navbar ul{
-    display: block;
-     text-align: left !important;
-     display: grid !important;
-}
-.navbar ul li{
-    list-style-type: none;
-}
-.navbar ul a{
-    display: grid;
-    text-align: left;
-}
-
-.mobileIcon:checked~.navbar{
-    display: grid;
-    position: absolute;
-    padding: 10px;
-    display: none;
-}
-.mob{
-    display: grid !important;
-    text-align: start !important;
-}
+    .mobileIcon:checked~.navbar{
+        display: grid;
+        position: absolute;
+       
+        display: none;
+    }
+    .mob{
+        display: grid !important;
+        text-align: start !important;
+    }
 .father{
     margin: 0 !important;
 }
@@ -194,7 +206,7 @@ color: #FFFFFF;
     .father-2 img{
         width: 280px;
         height: 280px;
-        margin-left: 10px !important;
+        margin-left: 20px !important;
         margin-bottom: 20px !important;
     }
 

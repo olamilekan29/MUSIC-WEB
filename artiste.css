@@ -7,11 +7,18 @@ body{
     align-items: center;
 }
 
+
 header{
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: #b9d1ff;
+}
+.moo{
+    display: flex;
+}
+.mo{
+    display: grid;
 }
 header img{
     margin: 10px;
@@ -143,71 +150,88 @@ font-size: 20px;
             *{
                 margin: 0;
                 padding: 0;
-                box-sizing: border-box;
-                display: grid;
-                width: fit-content;
+               
             }
             body{
                 width: 320px !important;
             }
             header{
+                background: #b9d1ff;
                 display: grid;
-                width: 320px;
                 justify-content: space-between !important;
+                align-items: center;
+               }
+                header img{
+                    padding: 0;
+                    margin: 0;
+                    position: sticky;
+                }
+                .mock{
+                    margin-right: 125px;
+                }
+                .mo{
+                    display: flex;
+        
+                }
+                
+            .mobile-icon{
+                display: block;
+                cursor: pointer;
+                width: 20px;
             }
-            header img{
+            .mobileIcon{
+                display: none;
+            }
+            .navbar{
+                display: none;
+                background-color: #b9d1ff;
+                
                 padding: 0;
                 margin: 0;
-                margin-right: 125px;
-                position: sticky;
-            }
-            .mo{
-                display: flex;
+                display: grid;
+                text-align: left;
             }
             
-        .mobile-icon{
-            display: block;
-            cursor: pointer;
-            width: 20px;
-        }
-        .mobileIcon{
-            display: none;
-        }
-        .navbar{
-            display: none;
-            background-color: #b9d1ff;
-            width: 320px;
-            padding: 0;
-            margin: 0;
-            display: grid;
-            text-align: left;
-        }
+            .navbar ul{
+                display: block;
+                 text-align: left !important;
+                 display: grid !important;
+            }
+            .navbar ul li{
+                list-style-type: none;
+                margin-left: 30px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+            .navbar ul a{
+                display: grid;
+                text-align: left;
+            }
         
-        .navbar ul{
-            display: block;
-             text-align: left !important;
-             display: grid !important;
-        }
-        .navbar ul li{
-            list-style-type: none;
-        }
-        .navbar ul a{
-            display: grid;
-            text-align: left;
-        }
-    
-        .mobileIcon:checked~.navbar{
-            display: grid;
-            position: absolute;
-            padding: 10px;
-            display: none;
-        }
-        .mob{
-            display: grid !important;
-            text-align: start !important;
-        }
-            .head{
+            .mobileIcon:checked~.navbar{
+                display: grid;
+                position: absolute;
+               
                 display: none;
+            }
+            .mob{
+                display: grid !important;
+                text-align: start !important;
+            }
+            .head{
+                padding: 0;
+                margin: 0;
+                align-items: center;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            .head h3{
+                font-size: 13px;
+                margin-left: 5px;
+            }
+            .head input{
+                width: 100px;
+                border: 1px solid gray;
+                margin-right: 5px;
             }
             .body{
                 align-items: center !important;
@@ -223,7 +247,7 @@ font-size: 20px;
             .body-1 span{
                 display: grid;
                 align-items: center;
-                margin-left: 10px;
+                margin-left: 5px;
             }
             .body-2{
                 display: grid;
@@ -233,7 +257,7 @@ font-size: 20px;
             .body-2 span{
                 display: grid;
                 align-items: center;
-                margin-left: 10px;
+                margin-left: 5px;
             }
             .body-3{
                 display: grid;

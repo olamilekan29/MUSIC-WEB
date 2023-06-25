@@ -9,10 +9,13 @@ body{
 
 
 header{
-        display: flex;
+    display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: #b9d1ff;
+}
+.moo{
+    display: flex;
 }
 .mo{
     display: grid;
@@ -111,37 +114,7 @@ margin-bottom: 20px;
 .mother-3 img{
     margin-right: 20px;
 }
-/* .mother-4{
-    display: flex;
-    padding: 50px;
-    align-items: center;
-}
-.mother-5{
-    margin-right: 80px;
-}
-.mother-6 h2{
-    font-family: Roboto;
-    font-size: 30px;
-    font-weight: 400;
-    text-align: left;
-    margin-bottom: 20px;
-    }
-    .mother-6 h3{
-    font-family: Roboto;
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 26px;
-    letter-spacing: 0em;
-    text-align: left;
-    margin-bottom: 20px;
-    }
-    .mother-6 button{
-        background: #222222;
-        height: 40px;
-        width: 120px;
-        color: white;
-        border: none;
-    } */
+
     .mother-4{
         display: flex;
         justify-content: space-between;
@@ -246,17 +219,23 @@ color: #FFFFFF;
             padding: 0;
             
         }
-       head{
+       header{
         background: #b9d1ff;
+        display: grid;
+        justify-content: space-between !important;
+        align-items: center;
        }
-        head img{
+        header img{
             padding: 0;
             margin: 0;
-            margin-right: 125px;
             position: sticky;
+        }
+        .mock{
+            margin-right: 125px;
         }
         .mo{
             display: flex;
+
         }
         
     .mobile-icon{
@@ -284,6 +263,8 @@ color: #FFFFFF;
     }
     .navbar ul li{
         list-style-type: none;
+        margin-left: 30px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
     .navbar ul a{
         display: grid;
@@ -353,30 +334,7 @@ color: #FFFFFF;
             margin: 0;
             padding: 0;
         }
-        /* .mother-4{
-            display: grid;
-            padding: 0;
-            align-items: center;
-            justify-content: center;
-            margin-left: 20px;
-        }
-        .mother-6 button{
-            width: 280px;
-            margin-bottom: 30px;
-        }
-        .mother-5 img{
-            width: 280px !important;
-            margin-top: 20px !important;
-            margin: 0;
-            padding: 0;
-        }
-        .mother-6 h2{
-            font-size: 15px;
-            margin-top: 20px;
-        }
-        .mother-6 h3{
-            font-size: 13px;
-        } */
+       
         .mother-4{
             display: grid;
             margin: 0;

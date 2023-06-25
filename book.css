@@ -13,6 +13,12 @@ header{
     justify-content: space-between;
     background-color: #b9d1ff;
 }
+.moo{
+    display: flex;
+}
+.mo{
+    display: grid;
+}
 header img{
     margin: 10px;
 }
@@ -28,7 +34,7 @@ header img{
     display: flex;
 }
 .navbar ul li{
-    display: grid;
+    display: flex;
      margin-right: 40px;
      color: black;
 
@@ -41,7 +47,7 @@ header img{
 }
 .bor{
     border-bottom: 2px solid #F20A0A;
-} 
+}
 
 .navbar ul li span{
     color:  #0E8104;
@@ -317,63 +323,67 @@ color: #FFFFFF;
         width: 320px !important;
     }
     header{
+        background: #b9d1ff;
         display: grid;
-        width: 320px;
         justify-content: space-between !important;
+        align-items: center;
+       }
+        header img{
+            padding: 0;
+            margin: 0;
+            position: sticky;
+        }
+        .mock{
+            margin-right: 125px;
+        }
+        .mo{
+            display: flex;
+
+        }
+        
+    .mobile-icon{
+        display: block;
+        cursor: pointer;
+        width: 20px;
     }
-    header img{
+    .mobileIcon{
+        display: none;
+    }
+    .navbar{
+        display: none;
+        background-color: #b9d1ff;
+        
         padding: 0;
         margin: 0;
-        margin-right: 125px;
-        position: sticky;
-    }
-    .mo{
-        display: flex;
+        display: grid;
+        text-align: left;
     }
     
-.mobile-icon{
-    display: block;
-    cursor: pointer;
-    width: 20px;
-}
-.mobileIcon{
-    display: none;
-}
-.navbar{
-    display: none;
-    background-color: black;
-    width: 320px;
-    padding: 0;
-    margin: 0;
-    display: grid;
-    text-align: left;
-}
+    .navbar ul{
+        display: block;
+         text-align: left !important;
+         display: grid !important;
+    }
+    .navbar ul li{
+        list-style-type: none;
+        margin-left: 30px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .navbar ul a{
+        display: grid;
+        text-align: left;
+    }
 
-.navbar ul{
-    display: block;
-     text-align: left !important;
-     display: grid !important;
-}
-.navbar ul li{
-    list-style-type: none;
-    display: grid;
-    color: white;
-}
-.navbar ul a{
-    display: grid;
-    text-align: left;
-}
-
-.mobileIcon:checked~.navbar{
-    display: grid;
-    position: absolute;
-    padding: 10px;
-    display: none;
-}
-.mob{
-    display: grid !important;
-    text-align: start !important;
-}
+    .mobileIcon:checked~.navbar{
+        display: grid;
+        position: absolute;
+       
+        display: none;
+    }
+    .mob{
+        display: grid !important;
+        text-align: start !important;
+    }
     .father{
         width: 300px;
         margin-left: 10px;
