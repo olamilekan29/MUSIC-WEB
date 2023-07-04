@@ -124,18 +124,23 @@ color: #FFFFFF;
             display: grid;
             justify-content: space-between !important;
             align-items: center;
+            width: 320px;
            }
-            header img{
-                padding: 0;
-                margin: 0;
-                position: sticky;
-            }
+           
+           .mobile-icon img{
+            margin-left: 100px;
+           }
+          
             .mock{
-                margin-right: 125px;
+                margin-right: 95px;
             }
+           
             .mo{
                 display: flex;
     
+            }
+            .lab{
+                display: flex;
             }
             
         .mobile-icon{
@@ -176,6 +181,12 @@ color: #FFFFFF;
             position: absolute;
            
             display: none;
+        }
+        .navbar ul button{
+            border: none;
+            width: 270px;
+            border-radius: 40px;
+            background: #C41740;
         }
         .mob{
             display: grid !important;
